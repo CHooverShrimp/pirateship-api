@@ -32,7 +32,7 @@ const options: ShippingOptions = {
   weight: 14,
   dimensionX: 9,
   dimensionY: 10,
-  dimensionZ: 5
+  dimensionZ: 5,
   showUpsRatesWhen2x7Selected: true,
 };
 
