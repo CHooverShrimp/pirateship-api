@@ -46,7 +46,7 @@ Running the above code will output the following:
 ;['Priority Mail - USPS - $10.07', 'Priority Mail Express - USPS - $47.25']
 ```
 
-This is a work in progress and the types are accurate as of `2026-02-23` but can't be guaranteed to be 100% correct as this is an undocumented internal API.
+This is a work in progress and the types are accurate as of `2026-09-22` but can't be guaranteed to be 100% correct as this is an undocumented internal API.
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/taciturnaxolotl/carriage/main/.github/images/line-break.svg" />

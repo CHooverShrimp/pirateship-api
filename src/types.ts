@@ -17,15 +17,30 @@ export type PackageType =
 
 /** Valid mail class keys for rate queries. */
 export type MailClassKey =
-    | 'PriorityExpress'
+    /** Local */
+    | 'PriorityExpress'                                                                  // USPS
     | 'First'
     | 'ParcelSelect'
-    | 'Priority'
-    | 'GroundAdvantage'
+    | 'Priority'                                                                         // USPS
+    | 'GroundAdvantage'                                                                  // USPS
     | 'MediaMail'
-    | 'FirstClassPackageInternationalService'
-    | 'PriorityMailInternational'
-    | 'PriorityMailExpressInternational'
+
+    | '93'                                                                               // UPS Ground Saver
+    | '92'                                                                               // UPS Ground Saver Below 1lb
+    | '11'                                                                               // UPS Standard
+    | '12'                                                                               // UPS 3 Day Select
+    | '13'                                                                               // UPS Next Day Air Saver
+    | '14'                                                                               // UPS Next Day Air Early AM
+    | '01'                                                                               // UPS Next Day Air
+
+    /** International */
+    // These twos are Pirateship's own implementation for international shipping
+    // | 'SimpleExportRate'                                                                  // USPS --> Local carrier
+    | 'FirstGlobalRate' // Might be replaced by SimpleExportRate in the future.           // USPS --> Local carrier
+
+    | 'FirstClassPackageInternationalService'                                             // USPS
+    | 'PriorityMailInternational'                                                         // USPS
+    | 'PriorityMailExpressInternational'                                                  // USPS
 
 /** Valid carrier keys. */
 export type CarrierKey = 'usps' | 'ups'
